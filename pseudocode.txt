@@ -1,0 +1,23 @@
+PSEUDOCODE
+
+gallons = INPUT : "Enter number of gallons"
+WHILE (gallons is not a number) or (gallons < 0)
+	PRINT "Enter a positive number"
+	gallons = INPUT : "Enter number of gallons"
+ENDWHILE
+
+charge := 0
+IF gallons > 20 THEN
+    charge  = (gallons - 20) * 6.00 + 14 * 3.75 + 6 * 2.35
+ELSE IF gallons > 6 and gallons <= 20 THEN
+	charge  = (gallons - 6) * 3.75 + 6 * 2.35
+ELSE
+	charge = gallons * 2.35
+ENDIF
+
+total = charge + 15;
+
+PRINT "You have used {gallons} thousand gallons of water."
+PRINT "Your total water bill is ${total}."
+
+END OF PSEUDOCODE
