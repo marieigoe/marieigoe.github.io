@@ -1,73 +1,58 @@
-Enhancement One: Software Engineering and Design
-
-## NARRATIVE
-
-## PSEUDOCODE
-
-PSEUDOCODE
-
-gallons = INPUT : "Enter number of gallons"
-WHILE (gallons is not a number) or (gallons < 0)
-	PRINT "Enter a positive number"
-	gallons = INPUT : "Enter number of gallons"
-ENDWHILE
-
-charge := 0
-IF gallons > 20 THEN
-    charge  = (gallons - 20) * 6.00 + 14 * 3.75 + 6 * 2.35
-ELSE IF gallons > 6 and gallons <= 20 THEN
-	charge  = (gallons - 6) * 3.75 + 6 * 2.35
-ELSE
-	charge = gallons * 2.35
-ENDIF
-
-total = charge + 15;
-
-PRINT "You have used {gallons} thousand gallons of water."
-PRINT "Your total water bill is ${total}."
-
-END OF PSEUDOCODE
-                                    
-                                    
-## PROGRAM IN C++
-                                    
-//#include "stdafx.h"
-#include <cstdlib>
-#include <iostream>
-#include <iomanip>
-using namespace std;
-
-int main()
-{
-	double gallons, charge = 0, total; // Initialize variables
-	const int fee = 15;
-	double costUpTo6K = 2.35,
-		costUpTo20K = 3.75,
-		costOver20K = 6.00;
-
-	cout << "Enter the total number of gallons used, divided by 1000: "; // Prompt user for input
-	cin >> gallons;
-
-	if (gallons > 20){ // If gallons entered are above 20
-		charge = (gallons - 20) * costOver20K;
-		charge = charge + (14 * costUpTo20K); 
-		charge = charge + (6 * costUpTo6K);
-	}
-	else if (gallons > 6 && gallons <= 20){ // If gallons entered are above 6 but below 20
-		charge = (gallons - 6) * costUpTo20K; 
-		charge = charge + (6 * costUpTo6K);
-	}
-	else { // If gallons are below 6 or equal to 6
-		charge = gallons * costUpTo6K; 
-	}
-
-	total = charge + fee; // Add calculated charge to the fee
-	cout << "You have used " << gallons << " thousand gallons of water." << endl;
-	cout << "Your total water bill is $" << setprecision(2) << fixed << total; 
-
-	return 0;
-}
-                                                                           
-                                                                           
- ##  ENHANCED PROGRAM: CONVERTED TO PYTHON           
-                                                                           
+<p><strong><span style="text-decoration: underline;">Enhancement One: Software Engineering and Design </span></strong></p>
+<p>&nbsp;</p>
+<p><strong>NARRATIVE </strong></p>
+<p>&nbsp;</p>
+<p><strong>PSEUDOCODE</strong></p>
+<p>PSEUDOCODE</p>
+<p>gallons = INPUT : "Enter number of gallons"</p>
+<p>WHILE (gallons is not a number) or (gallons &lt; 0)</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;PRINT "Enter a positive number"</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;gallons = INPUT : "Enter number of gallons"</p>
+<p>ENDWHILE</p>
+<p>charge := 0</p>
+<p>IF gallons &gt; 20 THEN</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;charge = (gallons - 20) * 6.00 + 14 * 3.75 + 6 * 2.35</p>
+<p>ELSE IF gallons &gt; 6 and gallons &lt;= 20 THEN</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;charge = (gallons - 6) * 3.75 + 6 * 2.35</p>
+<p>ELSE</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;charge = gallons * 2.35</p>
+<p>ENDIF</p>
+<p>total = charge + 15;</p>
+<p>PRINT "You have used {gallons} thousand gallons of water."</p>
+<p>PRINT "Your total water bill is ${total}."</p>
+<p>END OF PSEUDOCODE</p>
+<p>&nbsp;</p>
+<p><strong>PROGRAM IN C++</strong></p>
+<p>//#include "stdafx.h"</p>
+<p>#include &lt;cstdlib&gt;</p>
+<p>#include &lt;iostream&gt;</p>
+<p>#include &lt;iomanip&gt;</p>
+<p>using namespace std;</p>
+<p>int main()</p>
+<p>{</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;double gallons, charge = 0, total; // Initialize variables</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;const int fee = 15;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;double costUpTo6K = 2.35,</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; costUpTo20K = 3.75,</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; costOver20K = 6.00;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;cout &lt;&lt; "Enter the total number of gallons used, divided by 1000: "; // Prompt user for input</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;cin &gt;&gt; gallons;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;if (gallons &gt; 20){ // If gallons entered are above 20</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; charge = (gallons - 20) * costOver20K;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; charge = charge + (14 * costUpTo20K);</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; charge = charge + (6 * costUpTo6K);</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;}</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;else if (gallons &gt; 6 &amp;&amp; gallons &lt;= 20){ // If gallons entered are above 6 but below 20</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; charge = (gallons - 6) * costUpTo20K;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; charge = charge + (6 * costUpTo6K);</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;}</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;else { // If gallons are below 6 or equal to 6</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; charge = gallons * costUpTo6K;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;}</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;total = charge + fee; // Add calculated charge to the fee</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;cout &lt;&lt; "You have used " &lt;&lt; gallons &lt;&lt; " thousand gallons of water." &lt;&lt; endl;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;cout &lt;&lt; "Your total water bill is $" &lt;&lt; setprecision(2) &lt;&lt; fixed &lt;&lt; total;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;return 0;</p>
+<p>}</p>
+<p>&nbsp;</p>
+<p><strong>ENHANCED PROGRAM: CONVERTED TO PYTHON</strong></p>
