@@ -7,8 +7,11 @@ February 21st, 2021
 
 <a href="Milestone One CS 499 video.mov.zip" title="View Code Review">Code Review</a>
 
-<a href="EnhancementOne.html" title="Go to Enhancement One">Enhancement One</a>
+<a href="EnhancementOne.html" title="Go to Enhancement One">Go to Enhancement One</a>
 
+<a href="EnhancementTwo.html" title="Go to Enhancement Two">Go to Enhancement Two</a>
+
+<a href="EnhancementThree.html" title="Go to Enhancement Three">Go to Enhancement Three</a>
 
 
 **Self-Assessment**
