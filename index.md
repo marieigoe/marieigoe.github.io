@@ -2,7 +2,7 @@
 
 You can use the [editor on GitHub](https://github.com/marieigoe/marieigoe.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
 
-
+<a href="EnhancementOne.html" title="Go to Enhancement One">Enhancement One</a>
 
 
 
