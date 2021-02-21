@@ -1,9 +1,12 @@
 ## Welcome to my ePortfolio
 
-Marie Igoe
-Southern New Hampshire Univeristy
-CS 499 Computer Science Capstone
-February 21st, 2021
+
+<p style="text-align: center;">Marie Igoe</p>
+<p style="text-align: center;">Southern New Hampshire University</p>
+<p style="text-align: center;">CS 499 Computer Science Capstone</p>
+<p style="text-align: center;">February 2021</p>
+
+
 
 <a href="Milestone One CS 499 video.mov.zip" title="View Code Review">Code Review</a>
 
