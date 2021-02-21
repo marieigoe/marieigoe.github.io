@@ -6,6 +6,7 @@
 <p style="text-align: center;">CS 499 Computer Science Capstone</p>
 <p style="text-align: center;">February 2021</p>
 
+## Key Elements
 
 
 <a href="Milestone One CS 499 video.mov.zip" title="View Code Review">Code Review</a>
